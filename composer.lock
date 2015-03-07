@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "255f15af22d8360348769ea130a9c5f7",
+    "packages": [
+        {
+            "name": "gigablah/sphinxphp",
+            "version": "2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gigablah/sphinxphp.git",
+                "reference": "6d5e97fdd33c1129ca372203d1330827c1cbc46c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gigablah/sphinxphp/zipball/6d5e97fdd33c1129ca372203d1330827c1cbc46c",
+                "reference": "6d5e97fdd33c1129ca372203d1330827c1cbc46c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sphinx": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Aksyonoff",
+                    "homepage": "http://sphinxsearch.com/"
+                }
+            ],
+            "description": "Sphinx Search PHP API",
+            "homepage": "http://sphinxsearch.com/",
+            "keywords": [
+                "api",
+                "search",
+                "sphinx"
+            ],
+            "time": "2013-08-22 08:05:44"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": []
+}

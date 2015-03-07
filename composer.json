@@ -16,7 +16,8 @@
         "email": "meru.no.akuma@gmail.com"
     },
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "gigablah/sphinxphp": "2.0.*"
     },
     "autoload": {
         "psr-0": {

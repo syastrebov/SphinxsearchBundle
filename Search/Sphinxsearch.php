@@ -2,7 +2,7 @@
 
 namespace IAkumaI\SphinxsearchBundle\Search;
 
-use SphinxClient;
+use Sphinx\SphinxClient;
 
 use IAkumaI\SphinxsearchBundle\Exception\EmptyIndexException;
 use IAkumaI\SphinxsearchBundle\Exception\NoSphinxAPIException;
