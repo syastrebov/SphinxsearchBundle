@@ -2,7 +2,6 @@ services:
     # Search Engine
     iakumai.sphinxsearch.search:
         class: %iakumai.sphinxsearch.search.class%
-        file: %iakumai.sphinxsearch.sphinx_api.file%
         arguments:
             - %iakumai.sphinxsearch.searchd.host%
             - %iakumai.sphinxsearch.searchd.port%
