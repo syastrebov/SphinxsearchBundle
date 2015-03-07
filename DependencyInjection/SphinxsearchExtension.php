@@ -30,10 +30,6 @@ class SphinxsearchExtension extends Extension
             $container->setParameter('iakumai.sphinxsearch.searchd.socket', $config['searchd']['socket']);
         }
 
-        if (isset($config['sphinx_api'])) {
-            $container->setParameter('iakumai.sphinxsearch.sphinx_api.file', $config['sphinx_api']['file']);
-        }
-
         if (isset($config['indexes'])) {
             $container->setParameter('iakumai.sphinxsearch.indexes', $config['indexes']);
         }

@@ -33,16 +33,6 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->arrayNode('sphinx_api')
-                    ->addDefaultsIfNotSet()
-                    ->children()
-                        ->scalarNode('file')->defaultValue(__DIR__.'../../Sphinx/SphinxAPI.php')->end()
-                    ->end()
-                ->end()
-            ->end();
-
-        $rootNode
-            ->children()
                 ->arrayNode('indexes')
                     ->useAttributeAsKey('key')
                     ->prototype('scalar')->end()

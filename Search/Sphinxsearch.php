@@ -98,16 +98,6 @@ class Sphinxsearch
         } else {
             $this->sphinx->setServer($this->host, $this->port);
         }
-
-        if (!defined('SEARCHD_OK')) {
-            // To prevent notice
-            define('SEARCHD_OK', 0);
-        }
-
-        if (!defined('SEARCHD_WARNING')) {
-            // To prevent notice
-            define('SEARCHD_WARNING', 3);
-        }
     }
 
     /**
@@ -161,7 +151,7 @@ class Sphinxsearch
             throw new \RuntimeException(sprintf('Searching for "%s" failed. Result with no status. Error "%s"', $query, $this->sphinx->getLastError()));
         }
 
-        if ($results['status'] !== SEARCHD_OK && $results['status'] !== SEARCHD_WARNING) {
+        if ($results['status'] !== SphinxClient::SEARCHD_OK && $results['status'] !== SphinxClient::SEARCHD_WARNING) {
             throw new \RuntimeException(sprintf('Searching for "%s" failed. Result has bad status. Error "%s"', $query, $this->sphinx->getLastError()));
         }
 
