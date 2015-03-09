@@ -83,14 +83,9 @@ class Sphinxsearch
      */
     public function __construct($host, $port, $socket = null)
     {
-        $this->host = $host;
-        $this->port = $port;
+        $this->host   = $host;
+        $this->port   = $port;
         $this->socket = $socket;
-
-        if (!class_exists('SphinxClient')) {
-            throw new NoSphinxAPIException('You should include PHP SphinxAPI');
-        }
-
         $this->sphinx = new SphinxClient();
 
         if (!is_null($this->socket)) {
